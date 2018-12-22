@@ -2,6 +2,7 @@
 #define WIDGET_H
 
 #include <QWidget>
+#include "tools.h"
 
 namespace Ui {
 class Widget;
@@ -14,6 +15,10 @@ class Widget : public QWidget
 public:
     explicit Widget(QWidget *parent = nullptr);
     ~Widget();
+    tools tl;
+
+private slots:
+    void on_btnNTP_clicked();
 
 private:
     Ui::Widget *ui;

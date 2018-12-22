@@ -12,3 +12,8 @@ Widget::~Widget()
 {
     delete ui;
 }
+
+void Widget::on_btnNTP_clicked()
+{
+    tl.nptdate("time.windows.com");
+}
