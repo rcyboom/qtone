@@ -20,6 +20,8 @@ public:
 private slots:
     void on_btnNTP_clicked();
 
+    void on_btncfg_clicked();
+
 private:
     Ui::Widget *ui;
 };
