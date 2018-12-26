@@ -22,6 +22,8 @@ private slots:
 
     void on_btncfg_clicked();
 
+    void on_btnGate_clicked();
+
 private:
     Ui::Widget *ui;
 };

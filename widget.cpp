@@ -2,6 +2,7 @@
 #include "ui_widget.h"
 #include <QMessageBox>
 #include <QDateTime>
+#include "setdialog.h"
 
 Widget::Widget(QWidget *parent) :
     QWidget(parent),
@@ -35,4 +36,10 @@ void Widget::on_btncfg_clicked()
     a.append("\nCustomMSG=");
     a.append(tl.getCfgvalue("CustomMSG").toString());
     QMessageBox::information( QApplication::focusWidget(),"ReadSetting",a);
+}
+
+void Widget::on_btnGate_clicked()
+{
+    SetDialog set(this);
+    set.exec();
 }

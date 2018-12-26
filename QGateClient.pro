@@ -5,7 +5,7 @@
 #-------------------------------------------------
 
 QT       += core gui
-
+QT += serialport
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = QGateClient
@@ -28,15 +28,20 @@ SOURCES += \
         main.cpp \
         widget.cpp \
     tools.cpp \
-    gate.cpp
+    gate.cpp \
+    gateport.cpp \
+    setdialog.cpp
 
 HEADERS += \
         widget.h \
     tools.h \
-    gate.h
+    gate.h \
+    gateport.h \
+    setdialog.h
 
 FORMS += \
-        widget.ui
+        widget.ui \
+    setdialog.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

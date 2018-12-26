@@ -36,14 +36,21 @@
       <item>
        <widget class="QPushButton" name="btnNTP">
         <property name="text">
-         <string>ntpdate</string>
+         <string>时间更新</string>
         </property>
        </widget>
       </item>
       <item>
        <widget class="QPushButton" name="btncfg">
         <property name="text">
-         <string>Config</string>
+         <string>配置文件</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnGate">
+        <property name="text">
+         <string>闸机通信</string>
         </property>
        </widget>
       </item>
